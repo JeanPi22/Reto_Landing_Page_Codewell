@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Quicksand', sans-serif;
+}
+:root {
+    --color-principal: #4d13d1;
+}
+
+/* Elementos de la barra de navegación */
+nav {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    padding: 1rem 6rem;
+    font-size: 1.3rem;
+}
+.Name_page {
+    font-size: 1.5rem;
+    font-weight:bold;
+}
+.items_page ul a{     
+    text-decoration: none;
+    color: black;
+}
+.items_page ul{
+    font-weight: 500;
+    display: flex;
+}
+.items_page li {
+    list-style: none;    
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.login .btn_login button {    
+    font-weight:bold;
+    height: 3rem;
+    padding: .8rem 1.5rem;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: .3rem;
+}
+.login .btn_login button:hover{
+    color: white;
+    background-color: var(--color-principal);
+}
