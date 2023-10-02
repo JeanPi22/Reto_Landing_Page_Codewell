@@ -6,30 +6,31 @@
 html {
     font-size: 62.5%;
     font-family: 'Inter', sans-serif;
-    font-family: 'Lobster', cursive;
-    font-family: 'Quicksand', sans-serif;
 }
 :root {
     --color-principal: #4d13d1;
 }
 
+/*Elementos Globales*/
+a {     
+    text-decoration: none;
+    color: black;
+}
+
 /* Elementos de la barra de navegación */
+
 nav {
     width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 6rem;
+    height: 7.5rem;
     padding: 1rem 6rem;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
 }
-.Name_page {
-    font-size: 1.5rem;
+.Name_page h1{
+    font-size: 3rem;
     font-weight:bold;
-}
-.items_page ul a{     
-    text-decoration: none;
-    color: black;
 }
 .items_page ul{
     font-weight: 500;
@@ -40,16 +41,101 @@ nav {
     padding-left: 1rem;
     padding-right: 1rem;
 }
-.login .btn_login button {    
+.items_page li a:hover {
+    cursor: pointer;
+    color: var(--color-principal);
+    font-weight: 800;
+}
+
+/* Elementos Contenido de "Crear Portafolio" */
+
+.container_create {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    padding: 0 6rem;
+}
+.container_create .info_create {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.container_create .info_create .star_point img,
+.container_create .info_create .descripcion_check img {
+    height: 1.2rem;
+    margin: 0 .2rem;
+}
+.container_create .info_create .star_point b {
+    margin-left: .8rem;
+}
+.container_create .info_create .star_point {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem 0;
+}
+.container_create .info_create .create_port {
+    font-size: 5rem;
+    font-weight:800;
+    line-height: 1;
+}
+.container_create .info_create .desc_port {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+.container_create .info_create .start_free {
+    margin: 1.5rem 0;
+}
+.container_create .info_create .start_free .examplet {
+    margin-left: 1rem;
+    color: var(--color-principal);
     font-weight:bold;
-    height: 3rem;
+    font-size: 1.5rem;
+}
+.container_create .info_create .descripcion_check {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.container_create .info_create .descripcion_check figure {
+    display: flex;
+    margin-right: 1rem;
+}
+/* Imagen Crear Portafolio */
+.container_create .card_img img{
+    height: 48rem;
+}
+
+/* Botones (Entrar, Registrarse e Iniciar Prueba Gratis */
+
+.login .btn_register button,
+.info_create .start_free button {   
+    font-size: 1.7rem; 
+    font-weight:bold;
+    height: 4rem;
+    padding: .8rem 1.5rem;
+    background-color: var(--color-principal);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: .5rem;
+}
+.login .btn_login button {  
+    font-size: 1.7rem;  
+    font-weight:bold;
+    height: 4rem;
+    margin-right: .5rem;
     padding: .8rem 1.5rem;
     background-color: white;
     cursor: pointer;
     border: none;
-    border-radius: .3rem;
+    border-radius: .5rem;
 }
-.login .btn_login button:hover{
-    color: white;
-    background-color: var(--color-principal);
+.login .btn_resgister button:hover,
+.info_create .start_free button:hover,
+.login .btn_login button:hover {
+    background-color: white;
+    border: .2rem solid var(--color-principal);
+    border-radius: .5rem;
+    color: var(--color-principal);    
 }
