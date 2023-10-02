@@ -17,6 +17,49 @@ a {
     color: black;
 }
 
+/* Botones (Entrar, Registrarse e Iniciar Prueba Gratis */
+
+.login .btn_register button,
+.info_create .start_free button {   
+    font-size: 1.7rem; 
+    font-weight:bold;
+    height: 4rem;
+    padding: .8rem 1.5rem;
+    background-color: var(--color-principal);
+    color: #FFFDDC;
+    cursor: pointer;
+    border: none;
+    border-radius: .5rem;
+}
+.login .btn_login button,
+.container_free .free_description .btn_StartFree button {  
+    font-size: 1.7rem;  
+    font-weight:bold;
+    height: 4rem;
+    margin-right: .5rem;
+    padding: .8rem 1.5rem;
+    background-color: #FFFDDC;
+    cursor: pointer;
+    border: none;
+    border-radius: .5rem;
+}
+.container_free .free_description .btn_StartFree button{
+    background-color: white;
+    color: var(--color-principal);
+    height: auto;
+}
+.login .btn_resgister button:hover,
+.info_create .start_free button:hover,
+.login .btn_login button:hover {
+    background-color: #FFFDDC;
+    border: .2rem solid var(--color-principal);
+    border-radius: .5rem;
+    color: var(--color-principal);    
+}
+.container_free .free_description .btn_StartFree button:hover {
+    color: black;
+}
+
 /* Elementos de la barra de navegación */
 
 nav {
@@ -107,47 +150,11 @@ nav {
     height: 48rem;
 }
 
-/* Botones (Entrar, Registrarse e Iniciar Prueba Gratis */
-
-.login .btn_register button,
-.info_create .start_free button {   
-    font-size: 1.7rem; 
-    font-weight:bold;
-    height: 4rem;
-    padding: .8rem 1.5rem;
-    background-color: var(--color-principal);
-    color: #FFFDDC;
-    cursor: pointer;
-    border: none;
-    border-radius: .5rem;
-}
-.login .btn_login button {  
-    font-size: 1.7rem;  
-    font-weight:bold;
-    height: 4rem;
-    margin-right: .5rem;
-    padding: .8rem 1.5rem;
-    background-color: #FFFDDC;
-    cursor: pointer;
-    border: none;
-    border-radius: .5rem;
-}
-.login .btn_resgister button:hover,
-.info_create .start_free button:hover,
-.login .btn_login button:hover {
-    background-color: #FFFDDC;
-    border: .2rem solid var(--color-principal);
-    border-radius: .5rem;
-    color: var(--color-principal);    
-}
-
 /* ELementos sección "¿Por que usar Fiber?" */
 
 .container_whyFiber {
     margin-top: 4rem;
     padding: 0 6rem;
-    /* display: flex;
-    flex-direction: column; */
 }
 .container_whyFiber .why_use h2 {
     font-size: 1.3rem;
@@ -170,4 +177,37 @@ nav {
 }
 .container_whyFiber .applications .applications_items:nth-child(2) {
     margin: 0 2.3rem;
+}
+
+/* Elementos sección empieza prueba gratuita */
+.container_free {
+    max-height: 35rem;
+    width: auto;
+    background: rgb(103,19,209);
+    background: linear-gradient(45deg, rgba(103,19,209,1) 0%, rgba(77,19,209,1) 100%);
+    margin: 4rem 6rem;
+    padding-left: 4rem;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.container_free .free_description h1{
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 1rem;    
+}
+.container_free .free_description p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 1.5rem;    
+}
+.container_free img {
+    position: relative;
+    max-height: 30rem;
+    width: auto;
+    margin: 5rem 4rem 0 4rem;
+    object-fit: cover;
 }
