@@ -20,13 +20,13 @@ a {
 /* Elementos de la barra de navegación */
 
 nav {
-    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 7.5rem;
     padding: 1rem 6rem;
     font-size: 1.7rem;
+    background-color: #FFFDDC;
 }
 .Name_page h1{
     font-size: 3rem;
@@ -47,13 +47,14 @@ nav {
     font-weight: 800;
 }
 
-/* Elementos Contenido de "Crear Portafolio" */
+/* Elementos Sección Contenido de "Crear Portafolio" */
 
 .container_create {
     display: flex;
     justify-content: center;    
     align-items: center;
-    padding: 0 6rem;
+    padding: 1.8rem 6rem 4rem 6rem;
+    background-color: #FFFDDC;
 }
 .container_create .info_create {
     display: flex;
@@ -115,7 +116,7 @@ nav {
     height: 4rem;
     padding: .8rem 1.5rem;
     background-color: var(--color-principal);
-    color: white;
+    color: #FFFDDC;
     cursor: pointer;
     border: none;
     border-radius: .5rem;
@@ -126,7 +127,7 @@ nav {
     height: 4rem;
     margin-right: .5rem;
     padding: .8rem 1.5rem;
-    background-color: white;
+    background-color: #FFFDDC;
     cursor: pointer;
     border: none;
     border-radius: .5rem;
@@ -134,8 +135,39 @@ nav {
 .login .btn_resgister button:hover,
 .info_create .start_free button:hover,
 .login .btn_login button:hover {
-    background-color: white;
+    background-color: #FFFDDC;
     border: .2rem solid var(--color-principal);
     border-radius: .5rem;
     color: var(--color-principal);    
+}
+
+/* ELementos sección "¿Por que usar Fiber?" */
+
+.container_whyFiber {
+    margin-top: 4rem;
+    padding: 0 6rem;
+    /* display: flex;
+    flex-direction: column; */
+}
+.container_whyFiber .why_use h2 {
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: var(--color-principal);
+    margin-bottom: .8rem;
+}
+.container_whyFiber .why_use p {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 2.5rem;
+}
+.container_whyFiber .applications {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+.container_whyFiber .applications img {
+    height: 3rem;
+}
+.container_whyFiber .applications .applications_items:nth-child(2) {
+    margin: 0 2.3rem;
 }
