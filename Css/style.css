@@ -17,6 +17,9 @@ a {
     text-decoration: none;
     color: black;
 }
+li {
+    list-style: none;
+}
 
 /* Botones (Entrar, Registrarse e Iniciar Prueba Gratis */
 
@@ -82,7 +85,6 @@ nav {
     display: flex;
 }
 .items_page li {
-    list-style: none;    
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -261,4 +263,44 @@ nav {
 .btn_portfolio button:hover {
     background-color: var(--color-principal);
     color: white;
+}
+
+/* Elementos Footer */
+
+footer {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: var(--fondo);
+}
+.info_footer {
+    margin: 1.5rem 1.5rem 1.5rem 4rem;
+}
+.info_footer h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.info_footer p {
+    font-size: 1.3rem;
+}
+.links_footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 4rem 1.5rem 1.5rem;
+}
+.links_items .item{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.links_items li a{
+    font-size: 1.3rem;
+}
+.links_items li a:hover {
+    color: var(--color-principal);
+}
+.links_items li {
+    margin-bottom: .6rem;
 }
